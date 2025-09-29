@@ -154,8 +154,7 @@ $$
 \Gamma = \frac{V(S + h) - 2V(S) + V(S - h)}{h^2}
 $$
 
-The Taylor series expansion around S gives:
-$$
+The Taylor series expansion around S gives: $$
 V(S \pm h) = V(S) \pm h V'(S) + \frac{h^2}{2} V''(S) \pm \frac{h^3}{6} V^{(3)}(S) + \frac{h^4}{24} V^{(4)}(S) + O(h^5).
 $$
 
