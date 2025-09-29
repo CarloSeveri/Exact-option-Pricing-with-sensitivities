@@ -157,19 +157,14 @@ $$
 The Taylor series expansion around S gives: $$V(S \pm h) = V(S) \pm h V'(S) + \frac{h^2}{2} V''(S) \pm \frac{h^3}{6} V^{(3)}(S) + \frac{h^4}{24} V^{(4)}(S) + O(h^5)$$
 
 Substituting this into the formula of Delta above: 
-$$
-\Delta \approx \frac{\left( V(S) + h V'(S) + \frac{h^2}{2} V''(S) + O(h^3) \right) - \left( V(S) - h V'(S) + \frac{h^2}{2} V''(S) + O(h^3) \right)}{2h}
-$$
+$$\Delta \approx \frac{\left( V(S) + h V'(S) + \frac{h^2}{2} V''(S) + O(h^3) \right) - \left( V(S) - h V'(S) + \frac{h^2}{2} V''(S) + O(h^3) \right)}{2h}$$
 
-Simplifying opposite terms: $$
-\Delta = V'(S) + O(h^2)
-$$
+Simplifying opposite terms: $$\Delta = V'(S) + O(h^2)$$
 which confirms second-order accuracy.
 
-For Gamma the reasoning is the same : $$\frac{V(S) + h V'(S) + \frac{h^2}{2} V''(S) + V(S) - h V'(S) + \frac{h^2}{2} V''(S) - 2V(S) + O(h^3)}{h^2}
-$$
-Simplifying:$$
-\Gamma \approx \frac{h^2 V''(S) + O(h^3)}{h^2} = V''(S) + O(h^2)$$which also proves second-order accuracy.
+For Gamma the reasoning is the same : $$\frac{V(S) + h V'(S) + \frac{h^2}{2} V''(S) + V(S) - h V'(S) + \frac{h^2}{2} V''(S) - 2V(S) + O(h^3)}{h^2}$$
+
+Simplifying: $$\Gamma \approx \frac{h^2 V''(S) + O(h^3)}{h^2} = V''(S) + O(h^2)$$ which also proves second-order accuracy.
 
 
 ##### 3
