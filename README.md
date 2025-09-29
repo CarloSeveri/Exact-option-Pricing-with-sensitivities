@@ -47,10 +47,6 @@ We also use a smart pointer provided by the STL library **unique_ptr** to easily
 The programs begins by checking the put-call parity across the option parameter sets given, ensuring theoretical consistency. Then, using a mesh of spot prices, it prices both European call and put options, toggling between the two via a polymorphic interface implemented with smart pointers. The results are printed to show how option prices evolve as the underlying asset changes. Next, the program computes and prints an option price matrix, varying strikes, volatilities, and maturities to give a full view of pricing sensitivities. The `GreekCalculator` module is used to compare analytical and finite difference approximations of the Greeks (Delta, Gamma) and to generate their values across the spot price mesh. This is followed by matrix outputs for Delta and Gamma across various input parameters. Finally, the program shifts focus to perpetual American options, pricing them over the same spot mesh and outputting matrices to observe behavior over a range of strikes and volatilities.
 
 
-### Answers to questions
-
-For convenience I will answer the questions in blocks that comprehend a, b, c, d.
-
 ##### 1 
 
   Call Price: 2.1334
