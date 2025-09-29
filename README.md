@@ -156,8 +156,9 @@ $$
 
 The Taylor series expansion around S gives:
 $$
-V(S + h) = V(S) + h V'(S) + \frac{h^2}{2} V''(S) + \frac{h^3}{6} V'''(S) + O(h^4)
+V(S \pm h) = V(S) \pm h V'(S) + \frac{h^2}{2} V''(S) \pm \frac{h^3}{6} V^{(3)}(S) + \frac{h^4}{24} V^{(4)}(S) + O(h^5).
 $$
+
 Substituting this into the formula of Delta above: 
 $$
 \Delta \approx \frac{\left( V(S) + h V'(S) + \frac{h^2}{2} V''(S) + O(h^3) \right) - \left( V(S) - h V'(S) + \frac{h^2}{2} V''(S) + O(h^3) \right)}{2h}
